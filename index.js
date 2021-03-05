@@ -16,13 +16,13 @@ function convertB() {
   var con = document.getElementById("converter").value;
   var ans = document.getElementById("type");
   document.getElementById("label").innerHTML = con + " :";
-  ans.innerHTML = "";
+  ans.value = "";
   con.split();
   for (i = 0; i < con.length; i++) {
     var lineBreak = ascii(con[i]);
     console.log(lineBreak.toString(2))
 
-    ans.innerHTML += lineBreak.toString(2) + " ";
+    ans.value += lineBreak.toString(2) + " ";
 
 
   }
@@ -46,11 +46,11 @@ function convertW() {
   var con = document.getElementById("converter").value;
   var ans = document.getElementById("type");
   var lol;
-  ans.innerHTML = "";
+  ans.value = "";
   cons = con.split(" ", con.length);
   for (i = 0; i < cons.length; i++) {
     lol = Bi(cons[i]);
-  	ans.innerHTML += lol;
+  	ans.value += lol;
   }
 	document.getElementById("label").innerHTML = 'Your code translates to' + " :";
   
