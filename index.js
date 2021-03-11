@@ -50,7 +50,7 @@ function convertW() {
   cons = con.split(" ", con.length);
   for (i = 0; i < cons.length; i++) {
     lol = Bi(cons[i]);
-  	ans.value += lol;
+  	ans.innerHTML += lol;
   }
 	document.getElementById("label").innerHTML = 'Your code translates to' + " :";
   
